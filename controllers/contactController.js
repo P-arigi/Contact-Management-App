@@ -50,6 +50,7 @@ const getContact = asyncHandler(async(req,res) => {
        res.status(404);
        throw new Error("Contact not found")
     }
+    
    res.status(200).json(contactByName)
 })
  
